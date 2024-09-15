@@ -1,0 +1,871 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0904.1456                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2024.2.0 (20242.24.0904.1456)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/workbooks/PossibleContributorstoHappinessbyCountry?rev=1.0' id='PossibleContributorstoHappinessbyCountry' path='/workbooks' revision='1.2' />
+  <preferences />
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='2015-2017 (World Happiness Data)' inline='true' name='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='World Happiness Data' name='excel-direct.0gmcn9z0w50uxd17wmaoy1kx4aun'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0gmcn9z0w50uxd17wmaoy1kx4aun' name='2015-2017' table='[&apos;2015-2017$&apos;]' type='table'>
+          <columns gridOrigin='A1:M471:no:A1:M471:0' header='yes' outcome='6'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='2' />
+            <column datatype='real' name='F4' ordinal='3' />
+            <column datatype='real' name='Generosity' ordinal='4' />
+            <column datatype='real' name='Trust (Government Corruption)' ordinal='5' />
+            <column datatype='real' name='Freedom' ordinal='6' />
+            <column datatype='real' name='Health (Life Expectancy)' ordinal='7' />
+            <column datatype='real' name='Family' ordinal='8' />
+            <column datatype='real' name='Economy (GDP per Capita)' ordinal='9' />
+            <column datatype='real' name='Happiness Score' ordinal='10' />
+            <column datatype='integer' name='Happiness Rank' ordinal='11' />
+            <column datatype='real' name='Dystopia Residual' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0gmcn9z0w50uxd17wmaoy1kx4aun' name='2015-2017' table='[&apos;2015-2017$&apos;]' type='table'>
+          <columns gridOrigin='A1:M471:no:A1:M471:0' header='yes' outcome='6'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='2' />
+            <column datatype='real' name='F4' ordinal='3' />
+            <column datatype='real' name='Generosity' ordinal='4' />
+            <column datatype='real' name='Trust (Government Corruption)' ordinal='5' />
+            <column datatype='real' name='Freedom' ordinal='6' />
+            <column datatype='real' name='Health (Life Expectancy)' ordinal='7' />
+            <column datatype='real' name='Family' ordinal='8' />
+            <column datatype='real' name='Economy (GDP per Capita)' ordinal='9' />
+            <column datatype='real' name='Happiness Score' ordinal='10' />
+            <column datatype='integer' name='Happiness Rank' ordinal='11' />
+            <column datatype='real' name='Dystopia Residual' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Economy (GDP per Capita)]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Family]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Generosity]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Happiness Score]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Health (Life Expectancy)]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Trust (Government Corruption)]' role='measure' type='quantitative' />
+      <column datatype='date' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='2015-2017' datatype='table' name='[__tableau_internal_object_id__].[2015-2017_0A6E13CD3E9445ABA4CBE1C5FF896715]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_0efyfxe1oa7u2t1fvpd7v1.hyper' default-settings='hyper' schema='Extract' tablename='Extract' update-time='10/08/2020 09:20:51 PM'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy' name='Year' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy' name='Year' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>2015-2017</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>166</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>1</ordinal>
+              <family>2015-2017</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>2015-2017</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F4</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F4</remote-alias>
+              <ordinal>3</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Generosity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Generosity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Generosity</remote-alias>
+              <ordinal>4</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>468</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trust (Government Corruption)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Trust (Government Corruption)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trust (Government Corruption)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>466</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Freedom</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Freedom]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Freedom</remote-alias>
+              <ordinal>6</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>462</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Health (Life Expectancy)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Health (Life Expectancy)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Health (Life Expectancy)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>466</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Family</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Family]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Family</remote-alias>
+              <ordinal>8</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>468</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Economy (GDP per Capita)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Economy (GDP per Capita)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Economy (GDP per Capita)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>467</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Happiness Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Happiness Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Happiness Score</remote-alias>
+              <ordinal>10</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>449</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Happiness Rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Happiness Rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Happiness Rank</remote-alias>
+              <ordinal>11</ordinal>
+              <family>2015-2017</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>158</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dystopia Residual</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Dystopia Residual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dystopia Residual</remote-alias>
+              <ordinal>12</ordinal>
+              <family>2015-2017</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>470</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='2015-2017' id='2015-2017_0A6E13CD3E9445ABA4CBE1C5FF896715'>
+            <properties context=''>
+              <relation connection='excel-direct.0gmcn9z0w50uxd17wmaoy1kx4aun' name='2015-2017' table='[&apos;2015-2017$&apos;]' type='table'>
+                <columns gridOrigin='A1:M471:no:A1:M471:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='2' />
+                  <column datatype='real' name='F4' ordinal='3' />
+                  <column datatype='real' name='Generosity' ordinal='4' />
+                  <column datatype='real' name='Trust (Government Corruption)' ordinal='5' />
+                  <column datatype='real' name='Freedom' ordinal='6' />
+                  <column datatype='real' name='Health (Life Expectancy)' ordinal='7' />
+                  <column datatype='real' name='Family' ordinal='8' />
+                  <column datatype='real' name='Economy (GDP per Capita)' ordinal='9' />
+                  <column datatype='real' name='Happiness Score' ordinal='10' />
+                  <column datatype='integer' name='Happiness Rank' ordinal='11' />
+                  <column datatype='real' name='Dystopia Residual' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy' name='Year' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Basic Table'>
+      <repository-location derived-from='http://localhost:9100/workbooks/PossibleContributorstoHappinessbyCountry/BasicTable?rev=' id='BasicTable' path='/workbooks/PossibleContributorstoHappinessbyCountry' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2015-2017 (World Happiness Data)' name='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Happiness Score]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Happiness Score]' derivation='Sum' name='[sum:Happiness Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Happiness Score:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]</rows>
+        <cols>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[tyr:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{C291216D-5552-474D-98C2-87627FC56AB4}' />
+    </worksheet>
+    <worksheet name='Economy'>
+      <repository-location derived-from='http://localhost:9100/workbooks/PossibleContributorstoHappinessbyCountry/Economy?rev=' id='Economy' path='/workbooks/PossibleContributorstoHappinessbyCountry' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2015-2017 (World Happiness Data)' name='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Economy (GDP per Capita)]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Happiness Score]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Economy (GDP per Capita)]' derivation='Sum' name='[sum:Economy (GDP per Capita):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Happiness Score]' derivation='Sum' name='[sum:Happiness Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2016' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Happiness Score:qk]</rows>
+        <cols>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Economy (GDP per Capita):qk]</cols>
+      </table>
+      <simple-id uuid='{5BE60D49-0349-4714-8CC6-95962555FF4D}' />
+    </worksheet>
+    <worksheet name='Family'>
+      <repository-location derived-from='http://localhost:9100/workbooks/PossibleContributorstoHappinessbyCountry/Family?rev=' id='Family' path='/workbooks/PossibleContributorstoHappinessbyCountry' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2015-2017 (World Happiness Data)' name='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Family]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Happiness Score]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Family]' derivation='Sum' name='[sum:Family:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Happiness Score]' derivation='Sum' name='[sum:Happiness Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2016' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Happiness Score:qk]</rows>
+        <cols>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Family:qk]</cols>
+      </table>
+      <simple-id uuid='{5EF97FD1-E731-4EAC-80C2-60EA27FC070D}' />
+    </worksheet>
+    <worksheet name='Generosity'>
+      <repository-location derived-from='http://localhost:9100/workbooks/PossibleContributorstoHappinessbyCountry/Generosity?rev=' id='Generosity' path='/workbooks/PossibleContributorstoHappinessbyCountry' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2015-2017 (World Happiness Data)' name='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Generosity]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Happiness Score]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Generosity]' derivation='Sum' name='[sum:Generosity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Happiness Score]' derivation='Sum' name='[sum:Happiness Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2016' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Happiness Score:qk]</rows>
+        <cols>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Generosity:qk]</cols>
+      </table>
+      <simple-id uuid='{BD188B7B-BF33-4716-8630-72C928D69F4C}' />
+    </worksheet>
+    <worksheet name='Health'>
+      <repository-location derived-from='http://localhost:9100/workbooks/PossibleContributorstoHappinessbyCountry/Health?rev=' id='Health' path='/workbooks/PossibleContributorstoHappinessbyCountry' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2015-2017 (World Happiness Data)' name='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0efyfxe1oa7u2t1fvpd7v1nbxiry'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Happiness Score]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Health (Life Expectancy)]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Happiness Score]' derivation='Sum' name='[sum:Happiness Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health (Life Expectancy)]' derivation='Sum' name='[sum:Health (Life Expectancy):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2016' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Happiness Score:qk]</rows>
+        <cols>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[sum:Health (Life Expectancy):qk]</cols>
+      </table>
+      <simple-id uuid='{C67FF5AD-CC9D-4B2C-BD97-217DD43F12FD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location derived-from='http://localhost:9100/workbooks/PossibleContributorstoHappinessbyCountry/Dashboard1?rev=' id='Dashboard1' path='/workbooks/PossibleContributorstoHappinessbyCountry' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='3' name='Economy' w='49200' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='5' name='Family' w='49200' x='50000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='6' name='Health' w='49200' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='7' name='Generosity' w='49200' x='50000' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='12' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Economy' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='5' is-fixed='true' name='Family' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='6' is-fixed='true' name='Health' w='49200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='7' is-fixed='true' name='Generosity' w='49200' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{496FB812-30CC-41D2-8049-06C336B79CBE}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <repository-location derived-from='http://localhost:9100/workbooks/PossibleContributorstoHappinessbyCountry/Dashboard2?rev=' id='Dashboard2' path='/workbooks/PossibleContributorstoHappinessbyCountry' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Basic Table' w='38600' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98000' id='5' name='Generosity' w='59800' x='39400' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='10' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Basic Table' w='38600' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='Generosity' w='59800' x='39400' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FE7836F7-2115-4E15-83A9-D2C201A80518}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Basic Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]</field>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[tyr:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{72EA0AE3-5AEF-4FA3-A9B7-4F06BDB6C96C}' />
+    </window>
+    <window class='worksheet' name='Economy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]</field>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{864F7679-B817-4FB1-9817-3D362C9F7EFE}' />
+    </window>
+    <window class='worksheet' name='Family'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]</field>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FE7C680A-F529-47FE-833A-B0B99DC0107B}' />
+    </window>
+    <window class='worksheet' name='Health'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]</field>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{83F0D873-FB85-42A1-9AAA-BDC656DD5C49}' />
+    </window>
+    <window class='worksheet' name='Generosity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Country:nk]</field>
+            <field>[federated.0efyfxe1oa7u2t1fvpd7v1nbxiry].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{85BCC6DD-28C6-4F25-A5FB-50FC8D92E0D6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Economy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Family'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Generosity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Health'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4A3A26BD-8779-4452-B3D4-4526481D5BB9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Basic Table' />
+        <viewpoint name='Generosity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DEA930D2-92F8-4789-A075-04980A38A103}' />
+    </window>
+  </windows>
+</workbook>
