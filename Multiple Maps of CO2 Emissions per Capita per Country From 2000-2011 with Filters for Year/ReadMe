@@ -1,0 +1,1 @@
+This folder contains Tableau workbooks for a Tableau visualization of a map of CO2 emissions per capita per country from 2000-2011. A filter is used to select the data on CO2 emissions per capita per country for each year in the timespan covering 2000-2011. Use the filter to view a specific year's data on CO2 emissions per capita for each country.
